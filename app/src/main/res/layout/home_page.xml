@@ -31,13 +31,10 @@
 
         <ImageView
             android:id="@+id/imageView1"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
-            android:onClick="goToSOSActivity"
-            android:paddingBottom="20dp"
-            android:paddingRight="20dp"
             android:src="@drawable/sos2" />
     </RelativeLayout>
 
