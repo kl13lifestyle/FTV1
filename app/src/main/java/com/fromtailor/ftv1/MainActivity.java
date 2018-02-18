@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void goToSOSActivity(View view) {
         mFusedLocationClient.getLastLocation()
-                .addOnSuccessListener(new OnSuccessListener<Location>() {
+                .addOnSuccessListener(this, new OnSuccessListener<Location>() {
                     @Override
                     public void onSuccess(Location location) {
                         // GPS location can be null if GPS is switched off
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
                     }
                 })
-                .addOnFailureListener(new OnFailureListener() {
+                .addOnFailureListener(this, new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
                         Log.v("Test Log","Some error getting gps");
